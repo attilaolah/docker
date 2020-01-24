@@ -8,4 +8,4 @@ RUN ["rm", "/etc/pacman.d/mirrorlist.pacnew"]
 # Clean up:
 RUN ["pacman", "--noconfirm", "--sync", "--clean", "--clean"]
 
-CMD ["/usr/bin/bash"]
+CMD ["bash"]
