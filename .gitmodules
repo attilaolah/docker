@@ -1,0 +1,3 @@
+[submodule "arch-aur-flann/flann"]
+	path = arch-aur-flann/flann
+	url = https://aur.archlinux.org/flann.git
