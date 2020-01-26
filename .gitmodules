@@ -22,3 +22,6 @@
 [submodule "arch-aur-alice-vision/alice-vision"]
 	path = arch-aur-alice-vision/alice-vision
 	url = https://aur.archlinux.org/alice-vision.git
+[submodule "arch-aur-meshroom/meshroom"]
+	path = arch-aur-meshroom/meshroom
+	url = https://aur.archlinux.org/meshroom.git
