@@ -1,4 +1,4 @@
-FROM attilaolah/arch-aur:latest
+FROM arch-aur
 LABEL maintainer="Attila Oláh (atl@google.com)"
 
 COPY --chown=aur:aur ["flann", "${HOME}/flann"]

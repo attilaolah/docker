@@ -7,7 +7,7 @@ tmp = build
 
 all: $(pkg)
 
-$(pkg):
+$(pkg): aur
 	mkdir -p $(tmp)
 	docker build -t arch-aur-$(n) .
 	docker run -v "${PWD}/$(tmp):/tmp/$(tmp)" arch-aur-$(n)
@@ -20,4 +20,7 @@ $(n)/$(pkg):
 export: $(n)/$(pkg)
 	sudo cp $(n)/$(pkg) /tmp/$(tmp)
 
-.PHONY: all export
+aur:
+	docker build -t arch-aur ../arch-aur
+
+.PHONY: all export aur
