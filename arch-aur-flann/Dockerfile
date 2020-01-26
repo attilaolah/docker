@@ -1,6 +1,7 @@
 FROM attilaolah/arch-aur:latest
 MAINTAINER Attila Oláh (atl@google.com)
 
-ADD flann ${HOME}
+COPY --chown=aur:aur ["flann", "${HOME}/flann"]
+COPY --chown=aur:aur ["Makefile", "${HOME}"]
 
-ENTRYPOINT ["makepkg", "--noconfirm", "--syncdeps", "--asdeps", "--needed", "--rmdeps", "--clean"]
+ENTRYPOINT ["make", "export"]
