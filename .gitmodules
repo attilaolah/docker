@@ -10,3 +10,6 @@
 [submodule "arch-aur-ceres-solver/ceres-solver"]
 	path = arch-aur-ceres-solver/ceres-solver
 	url = https://aur.archlinux.org/ceres-solver.git
+[submodule "arch-aur-uncertainty-framework/uncertainty-framework"]
+	path = arch-aur-uncertainty-framework/uncertainty-framework
+	url = https://aur.archlinux.org/uncertainty-framework.git
