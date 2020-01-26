@@ -13,3 +13,6 @@
 [submodule "arch-aur-uncertainty-framework/uncertainty-framework"]
 	path = arch-aur-uncertainty-framework/uncertainty-framework
 	url = https://aur.archlinux.org/uncertainty-framework.git
+[submodule "arch-aur-popsift/popsift"]
+	path = arch-aur-popsift/popsift
+	url = https://aur.archlinux.org/popsift.git
