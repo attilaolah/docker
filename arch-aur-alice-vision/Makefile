@@ -23,11 +23,11 @@ export: $(n)/$(pkg)
 
 deps:
 	mkdir -p deps
+	cp ../arch-aur-ceres-solver/ceres-solver-*-$(a).pkg.tar.xz deps
+	cp ../arch-aur-coin-or-lemon/coin-or-lemon-*-$(a).pkg.tar.xz deps
 	cp ../arch-aur-flann/flann-*-$(a).pkg.tar.xz deps
 	cp ../arch-aur-geogram/geogram-*-$(a).pkg.tar.xz deps
 	cp ../arch-aur-opengv-git/opengv-git-*-$(a).pkg.tar.xz deps
-	cp ../arch-aur-ceres-solver/ceres-solver-*-$(a).pkg.tar.xz deps
-	cp ../arch-aur-coin-or-lemon/coin-or-lemon-*-$(a).pkg.tar.xz deps
 	cp ../arch-aur-popsift/popsift-*-$(a).pkg.tar.xz deps
 	cp ../arch-aur-uncertainty-framework/uncertainty-framework-*-$(a).pkg.tar.xz deps
 	rm deps/popsift-libs-*-$(a).pkg.tar.xz
