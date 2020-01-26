@@ -1,5 +1,5 @@
 FROM attilaolah/arch:latest
-MAINTAINER Attila Oláh (atl@google.com)
+LABEL maintainer="Attila Oláh (atl@google.com)"
 
 # Install common build dependencies.
 RUN ["pacman", "--noconfirm", "--sync", "--needed", "base-devel", "git"]

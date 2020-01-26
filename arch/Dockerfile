@@ -1,5 +1,5 @@
 FROM archlinux/base:latest
-MAINTAINER Attila Oláh (atl@google.com)
+LABEL maintainer="Attila Oláh (atl@google.com)"
 
 # Update the system and replace the mirror list:
 ONBUILD RUN ["pacman", "--noconfirm", "--sync", "--refresh", "--sysupgrade"]
