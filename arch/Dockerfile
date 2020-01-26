@@ -2,10 +2,10 @@ FROM archlinux/base:latest
 MAINTAINER Attila Oláh (atl@google.com)
 
 # Update the system and replace the mirror list:
-RUN ["pacman", "--noconfirm", "--sync", "--refresh", "--sysupgrade"]
-RUN ["rm", "/etc/pacman.d/mirrorlist.pacnew"]
+ONBUILD RUN ["pacman", "--noconfirm", "--sync", "--refresh", "--sysupgrade"]
+ONBUILD RUN ["rm", "/etc/pacman.d/mirrorlist.pacnew"]
 
 # Clean up:
-RUN ["pacman", "--noconfirm", "--sync", "--clean", "--clean"]
+ONBUILD RUN ["pacman", "--noconfirm", "--sync", "--clean", "--clean"]
 
 CMD ["bash"]
