@@ -1,3 +1,9 @@
 [submodule "arch-aur-flann/flann"]
 	path = arch-aur-flann/flann
 	url = https://aur.archlinux.org/flann.git
+[submodule "arch-aur-geogram/geogram"]
+	path = arch-aur-geogram/geogram
+	url = https://aur.archlinux.org/geogram.git
+[submodule "arch-aur-coin-or-lemon/coin-or-lemon"]
+	path = arch-aur-coin-or-lemon/coin-or-lemon
+	url = https://aur.archlinux.org/coin-or-lemon.git
