@@ -7,3 +7,6 @@
 [submodule "arch-aur-coin-or-lemon/coin-or-lemon"]
 	path = arch-aur-coin-or-lemon/coin-or-lemon
 	url = https://aur.archlinux.org/coin-or-lemon.git
+[submodule "arch-aur-ceres-solver/ceres-solver"]
+	path = arch-aur-ceres-solver/ceres-solver
+	url = https://aur.archlinux.org/ceres-solver.git
