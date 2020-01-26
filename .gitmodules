@@ -19,3 +19,6 @@
 [submodule "arch-aur-opengv-git/opengv-git"]
 	path = arch-aur-opengv-git/opengv-git
 	url = https://aur.archlinux.org/opengv-git.git
+[submodule "arch-aur-alice-vision/alice-vision"]
+	path = arch-aur-alice-vision/alice-vision
+	url = https://aur.archlinux.org/alice-vision.git
