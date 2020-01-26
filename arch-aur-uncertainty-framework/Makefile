@@ -28,4 +28,4 @@ deps:
 aur:
 	docker build -t arch-aur ../arch-aur
 
-.PHONY: all export aur
+.PHONY: all export deps aur
