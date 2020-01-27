@@ -1,0 +1,22 @@
+diff --git PKGBUILD PKGBUILD
+index af56841..d1e3b48 100644
+--- PKGBUILD
++++ PKGBUILD
+@@ -8,7 +8,7 @@
+ # Contributor: Jan-Erik Meyer-Luetgens <nyan at meyer-luetgens dot de>
+ 
+ pkgname=pyside2-git
+-pkgver=r6554.6eb583d7
++pkgver=r6715.bc77dd5e
+ pkgrel=1
+ arch=(x86_64)
+ url='https://www.qt.io'
+@@ -33,7 +33,7 @@ optdepends=('qt5-svg: QtSvg bindings'
+             'qt5-remoteobjects: QtRemoteObjects bindings')
+ conflicts=(python-pyside2 pyside2)
+ provides=(python-pyside2 pyside2)
+-source=("$pkgname::git+https://code.qt.io/pyside/pyside-setup.git")
++source=("$pkgname::git+https://code.qt.io/pyside/pyside-setup.git#branch=5.14")
+ sha256sums=('SKIP')
+ 
+ pkgver() {
