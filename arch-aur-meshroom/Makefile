@@ -15,7 +15,7 @@ $(pkg): aur deps
 	rm -rf $(tmp) deps
 
 $(n)/$(pkg):
-	sudo pacman --noconfirm --upgrade --asdeps /tmp/deps/*-$(a).pkg.tar.xz
+	sudo sh -c "pacman --noconfirm --upgrade --asdeps /tmp/deps/*-$(a).pkg.tar.xz"
 	cd $(n) && makepkg --noconfirm --syncdeps --asdeps --needed --rmdeps --clean
 
 export: $(n)/$(pkg)
