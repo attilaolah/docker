@@ -8,7 +8,7 @@ lib = "$(n)-libs-$(v)-$(a).pkg.tar.xz"
 all: aur
 	mkdir -p build
 	docker build -t arch-aur-$(n) .
-	docker run -v "${PWD}/build:/tmp/build" arch-aur-$(n)
+	docker run --rm -v "${PWD}/build:/tmp/build" arch-aur-$(n)
 	cp build/$(pkg) .
 	cp build/$(lib) .
 	rm -rf build
