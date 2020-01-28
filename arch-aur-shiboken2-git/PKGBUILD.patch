@@ -21,3 +21,12 @@ index ca6d8a3..080213e 100644
  sha256sums=('SKIP')
  
  pkgver() {
+@@ -29,7 +29,7 @@ prepare() {
+   cd "${srcdir}/${pkgbase}"
+ 
+   mkdir -p build
+-  sed -e 's|0307FFFF|0308FFFF|' -i sources/shiboken2/libshiboken/pep384impl.h # Support python 3.8
++  sed -e 's|print(e)|raise e|' -i sources/shiboken2/libshiboken/embed/signature_bootstrap.py
+ }
+ 
+ build() {

@@ -20,3 +20,11 @@ index af56841..d1e3b48 100644
  sha256sums=('SKIP')
  
  pkgver() {
+@@ -46,6 +46,7 @@ prepare() {
+   cd "${srcdir}/${pkgname}"
+ 
+   mkdir -p build
++  sed -e 's|print(e)|raise e|' -i sources/shiboken2/libshiboken/embed/signature_bootstrap.py
+ }
+ 
+ build() {
