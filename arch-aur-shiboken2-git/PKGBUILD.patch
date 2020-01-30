@@ -1,18 +1,8 @@
 diff --git PKGBUILD PKGBUILD
-index ca6d8a3..080213e 100644
+index 3c58f02..6b2eb04 100644
 --- PKGBUILD
 +++ PKGBUILD
-@@ -8,15 +8,15 @@
- 
- pkgbase=shiboken2-git
- pkgname=(shiboken2-git python-shiboken2-git)
--_clangver=9.0.0
--pkgver=r6554.6eb583d7
-+_clangver=9.0.1
-+pkgver=r6715.bc77dd5e
- pkgrel=1
- arch=(x86_64)
- url='https://www.qt.io'
+@@ -16,7 +16,7 @@ url='https://www.qt.io'
  license=(GPL2 LGPL)
  pkgdesc='Generates bindings for C++ libraries using CPython source code (git version)'
  makedepends=(clang llvm cmake git libxslt qt5-xmlpatterns python-sphinx)
