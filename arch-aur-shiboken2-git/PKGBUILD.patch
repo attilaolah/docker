@@ -1,5 +1,5 @@
 diff --git PKGBUILD PKGBUILD
-index 3c58f02..6b2eb04 100644
+index 3c58f02..47acd1f 100644
 --- PKGBUILD
 +++ PKGBUILD
 @@ -16,7 +16,7 @@ url='https://www.qt.io'
@@ -11,12 +11,11 @@ index 3c58f02..6b2eb04 100644
  sha256sums=('SKIP')
  
  pkgver() {
-@@ -29,7 +29,7 @@ prepare() {
+@@ -29,7 +29,6 @@ prepare() {
    cd "${srcdir}/${pkgbase}"
  
    mkdir -p build
 -  sed -e 's|0307FFFF|0308FFFF|' -i sources/shiboken2/libshiboken/pep384impl.h # Support python 3.8
-+  sed -e 's|print(e)|raise e|' -i sources/shiboken2/libshiboken/embed/signature_bootstrap.py
  }
  
  build() {

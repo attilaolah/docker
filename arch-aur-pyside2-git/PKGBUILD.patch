@@ -1,5 +1,5 @@
 diff --git PKGBUILD PKGBUILD
-index af56841..b6e36b9 100644
+index af56841..7f20ef5 100644
 --- PKGBUILD
 +++ PKGBUILD
 @@ -33,7 +33,7 @@ optdepends=('qt5-svg: QtSvg bindings'
@@ -11,11 +11,3 @@ index af56841..b6e36b9 100644
  sha256sums=('SKIP')
  
  pkgver() {
-@@ -46,6 +46,7 @@ prepare() {
-   cd "${srcdir}/${pkgname}"
- 
-   mkdir -p build
-+  sed -e 's|print(e)|raise e|' -i sources/shiboken2/libshiboken/embed/signature_bootstrap.py
- }
- 
- build() {
