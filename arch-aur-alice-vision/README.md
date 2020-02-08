@@ -8,6 +8,7 @@
 ## Dependencies
 
 - [`arch-aur-ceres-solver`](../arch-aur-ceres-solver/README.md)
+- [`arch-aur-coin-or-lemon`](../arch-aur-coin-or-lemon/README.md) (build)
 - [`arch-aur-flann`](../arch-aur-flann/README.md)
 - [`arch-aur-geogram`](../arch-aur-flann/README.md)
 - [`arch-aur-opengv-git`](../arch-aur-opengv-git/README.md)
@@ -16,7 +17,3 @@
 
 To disable optional dependencies, see
 [this pinned comment](https://aur.archlinux.org/packages/alice-vision#pinned-689534).
-
-## Build dependencies:
-
-- [`arch-aur-coin-or-lemon`](../arch-aur-coin-or-lemon/README.md) (build)

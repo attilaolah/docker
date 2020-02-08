@@ -13,4 +13,6 @@
 - [`arch-aur-geogram`](../arch-aur-flann/README.md) (transitive)
 - [`arch-aur-opengv-git`](../arch-aur-opengv-git/README.md) (transitive)
 - [`arch-aur-popsift`](../arch-aur-popsift/README.md) (transitive, optional)
+- [`arch-aur-pyside2-git`](../arch-aur-pyside2-git/README.md) (build)
+- [`arch-aur-shiboken2-git`](../arch-aur-shiboken2-git/README.md) (build)
 - [`arch-aur-uncertainty-framework`](../arch-aur-uncertainty-framework/README.md) (transitive, optional)
