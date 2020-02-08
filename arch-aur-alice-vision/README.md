@@ -19,4 +19,4 @@ To disable optional dependencies, see
 
 ## Build dependencies:
 
-- [`arch-aur-coin-or-lemon`](../) (build)
+- [`arch-aur-coin-or-lemon`](../arch-aur-coin-or-lemon/README.md) (build)
