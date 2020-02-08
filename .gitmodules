@@ -31,3 +31,6 @@
 [submodule "arch-aur-pyside2-git/pyside2-git"]
 	path = arch-aur-pyside2-git/pyside2-git
 	url = https://aur.archlinux.org/pyside2-git.git
+[submodule "arch-aur-meshroom-git/meshroom-git"]
+	path = arch-aur-meshroom-git/meshroom-git
+	url = https://aur.archlinux.org/meshroom-git.git

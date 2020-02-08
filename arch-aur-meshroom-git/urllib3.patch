@@ -1,0 +1,15 @@
+--- /usr/lib/python3.8/site-packages/urllib3/packages/six.py
++++ /usr/lib/python3.8/site-packages/urllib3/packages/six.py
+@@ -120,12 +120,8 @@
+
+
+ class _LazyModule(types.ModuleType):
+-    def __init__(self, name):
+-        super(_LazyModule, self).__init__(name)
+-        self.__doc__ = self.__class__.__doc__
+-
+     def __dir__(self):
+-        attrs = ["__doc__", "__name__"]
++        attrs = ["__name__"]
+         attrs += [attr.name for attr in self._moved_attributes]
+         return attrs
