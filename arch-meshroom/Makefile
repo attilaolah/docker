@@ -2,7 +2,7 @@ n = meshroom
 a = x86_64
 
 all: pkg
-	docker build -t attilaolah/arch-$(n) .
+	docker build --no-cache -t attilaolah/arch-$(n) .
 	rm -rf pkg
 
 pkg:
