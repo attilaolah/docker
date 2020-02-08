@@ -13,8 +13,5 @@ pkg:
 	cp ../arch-aur-geogram/geogram-*-$(a).pkg.tar.xz pkg
 	cp ../arch-aur-meshroom/meshroom-*-$(a).pkg.tar.xz pkg
 	cp ../arch-aur-opengv-git/opengv-git-*-$(a).pkg.tar.xz pkg
-	cp ../arch-aur-pyside2-git/pyside2-git-*-$(a).pkg.tar.xz pkg
-	cp ../arch-aur-shiboken2-git/python-shiboken2-git-*-$(a).pkg.tar.xz pkg
-	cp ../arch-aur-shiboken2-git/shiboken2-git-*-$(a).pkg.tar.xz pkg
 
 .PHONY: all pkg
