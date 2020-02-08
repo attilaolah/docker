@@ -6,7 +6,7 @@ all: aur deps
 	docker build -t arch-aur-$(n) .
 	docker run --rm -v "${PWD}/build:/tmp/build" -v "${PWD}/deps:/tmp/deps" arch-aur-$(n)
 	cp build/*-$(a).pkg.tar.xz .
-	rm -rf build
+	rm -rf build deps
 
 aur:
 	docker build -t arch-aur ../arch-aur

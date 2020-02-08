@@ -4,8 +4,8 @@ a = x86_64
 all: aur deps
 	mkdir -p build
 	docker build -t arch-aur-$(n) .
-	docker run --rm -v  "${PWD}/build:/tmp/build" -v "${PWD}/deps:/tmp/deps" arch-aur-$(n)
-	cp build/$(pkg) .
+	docker run --rm -v "${PWD}/build:/tmp/build" -v "${PWD}/deps:/tmp/deps" arch-aur-$(n)
+	cp build/*-$(a).pkg.tar.xz .
 	rm -rf build deps
 
 aur:

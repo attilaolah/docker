@@ -10,7 +10,7 @@ all: $(pkg)
 $(pkg): aur deps
 	mkdir -p $(tmp)
 	docker build -t arch-aur-$(n) .
-	docker run --rm -v  "${PWD}/$(tmp):/tmp/$(tmp)" -v "${PWD}/deps:/tmp/deps" arch-aur-$(n)
+	docker run --rm -v "${PWD}/$(tmp):/tmp/$(tmp)" -v "${PWD}/deps:/tmp/deps" arch-aur-$(n)
 	cp $(tmp)/$(pkg) .
 	rm -rf $(tmp) deps
 
