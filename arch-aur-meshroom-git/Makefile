@@ -3,13 +3,13 @@ a = x86_64
 
 all: aur deps
 	mkdir -p build
-	docker build -t arch-aur-$(n) .
-	docker run --rm -v "${PWD}/build:/tmp/build" -v "${PWD}/deps:/tmp/deps" arch-aur-$(n)
+	docker build -t $(notdir $(CURDIR)) .
+	docker run --rm -v "${PWD}/build:/tmp/build" -v "${PWD}/deps:/tmp/deps" $(notdir $(CURDIR))
 	cp build/*-$(a).pkg.tar.xz .
 	rm -rf build deps
 
 aur:
-	docker build -t arch-aur ../arch-aur
+	$(MAKE) --directory ../arch-aur
 
 export: build
 	sudo cp $(n)/*-$(a).pkg.tar.xz /tmp/build

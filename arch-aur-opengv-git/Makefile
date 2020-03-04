@@ -9,8 +9,8 @@ all: $(pkg)
 
 $(pkg): aur
 	mkdir -p $(tmp)
-	docker build -t arch-aur-$(n) .
-	docker run --rm -v "${PWD}/$(tmp):/tmp/$(tmp)" arch-aur-$(n)
+	docker build -t $(notdir $(CURDIR)) .
+	docker run --rm -v "${PWD}/$(tmp):/tmp/$(tmp)" $(notdir $(CURDIR))
 	cp $(tmp)/$(pkg) .
 	rm -rf $(tmp)
 
@@ -21,6 +21,6 @@ export: $(n)/$(pkg)
 	sudo cp $(n)/$(pkg) /tmp/$(tmp)
 
 aur:
-	docker build -t arch-aur ../arch-aur
+	$(MAKE) --directory ../arch-aur
 
 .PHONY: all export aur

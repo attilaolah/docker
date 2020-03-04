@@ -1,4 +1,4 @@
-FROM attilaolah/arch:latest
+FROM arch
 LABEL maintainer="Attila Oláh (atl@google.com)"
 
 # Install common build dependencies.

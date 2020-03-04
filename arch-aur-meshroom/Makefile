@@ -9,8 +9,8 @@ all: $(pkg)
 
 $(pkg): aur deps
 	mkdir -p $(tmp)
-	docker build -t arch-aur-$(n) .
-	docker run --rm -v "${PWD}/$(tmp):/tmp/$(tmp)" -v "${PWD}/deps:/tmp/deps" arch-aur-$(n)
+	docker build -t $(notdir $(CURDIR)) .
+	docker run --rm -v "${PWD}/$(tmp):/tmp/$(tmp)" -v "${PWD}/deps:/tmp/deps" $(notdir $(CURDIR))
 	cp $(tmp)/$(pkg) .
 	rm -rf $(tmp) deps
 
@@ -37,6 +37,6 @@ deps:
 	cp ../arch-aur-shiboken2-git/shiboken2-git-*-$(a).pkg.tar.xz deps
 
 aur:
-	docker build -t arch-aur ../arch-aur
+	$(MAKE) --directory ../arch-aur
 
 .PHONY: all export deps aur
