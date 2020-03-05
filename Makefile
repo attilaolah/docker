@@ -7,8 +7,6 @@ all:
 	cd arch-aur-geogram && $(MAKE)
 	cd arch-aur-opengv-git && $(MAKE)
 	cd arch-aur-popsift && $(MAKE)
-	cd arch-aur-shiboken2-git && $(MAKE)
-	cd arch-aur-pyside2-git && $(MAKE)
 	cd arch-aur-uncertainty-framework && $(MAKE)
 	cd arch-aur-alice-vision && $(MAKE)
 	cd arch-aur-meshroom && $(MAKE)
