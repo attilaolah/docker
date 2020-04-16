@@ -7,7 +7,7 @@ tmp = build
 
 all: $(pkg)
 
-$(pkg): aur deps
+$(pkg): deps:
 	mkdir -p $(tmp)
 	docker build -t $(notdir $(CURDIR)) .
 	docker run --rm -v "${PWD}/$(tmp):/tmp/$(tmp)" -v "${PWD}/deps:/tmp/deps" $(notdir $(CURDIR))
@@ -31,7 +31,4 @@ deps:
 	cp ../arch-aur-geogram/geogram-*-$(a).pkg.tar.xz deps
 	cp ../arch-aur-opengv-git/opengv-git-*-$(a).pkg.tar.xz deps
 
-aur:
-	$(MAKE) --directory ../arch-aur
-
-.PHONY: all export deps aur
+.PHONY: all export deps

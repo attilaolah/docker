@@ -1,15 +1,12 @@
 n = meshroom-git
 a = x86_64
 
-all: aur deps
+all: deps
 	mkdir -p build
 	docker build -t $(notdir $(CURDIR)) .
 	docker run --rm -v "${PWD}/build:/tmp/build" -v "${PWD}/deps:/tmp/deps" $(notdir $(CURDIR))
 	cp build/*-$(a).pkg.tar.xz .
 	rm -rf build deps
-
-aur:
-	$(MAKE) --directory ../arch-aur
 
 export: build
 	sudo cp $(n)/*-$(a).pkg.tar.xz /tmp/build
@@ -28,4 +25,4 @@ build:
 	sudo patch --directory=/ --strip=0 < urllib3.patch
 	cd $(n) && makepkg --noconfirm --syncdeps --asdeps --needed --rmdeps --clean
 
-.PHONY: all export build deps aur
+.PHONY: all export build depr

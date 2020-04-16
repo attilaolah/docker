@@ -7,7 +7,7 @@ tmp = build
 
 all: $(pkg)
 
-$(pkg): aur deps
+$(pkg): deps
 	mkdir -p $(tmp)
 	docker build -t $(notdir $(CURDIR)) .
 	docker run --rm -v "${PWD}/$(tmp):/tmp/$(tmp)" -v "${PWD}/deps:/tmp/deps" $(notdir $(CURDIR))
@@ -32,7 +32,4 @@ deps:
 	cp ../arch-aur-uncertainty-framework/uncertainty-framework-*-$(a).pkg.tar.xz deps
 	rm deps/popsift-libs-*-$(a).pkg.tar.xz
 
-aur:
-	$(MAKE) --directory ../arch-aur
-
-.PHONY: all export deps aur
+.PHONY: all export deps
