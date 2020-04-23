@@ -1,5 +1,5 @@
 n = flann
-v = 1.9.1-6
+v = 1.9.1-7
 a = x86_64
 
 pkg = "$(n)-$(v)-$(a).pkg.tar.xz"
