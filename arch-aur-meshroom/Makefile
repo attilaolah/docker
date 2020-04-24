@@ -1,5 +1,5 @@
 n = meshroom
-v = 2019.2.0-1
+v = 2019.2.0-2
 a = x86_64
 
 pkg = "$(n)-$(v)-$(a).pkg.tar.xz"
